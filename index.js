@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 
 const bot = new Telegraf(process.env.BOT_TOKEN);
 const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY);
-const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 
 const app = express();
 app.use(cors());
